@@ -1,0 +1,61 @@
+html {
+  background-image: url("quadro.png"); 
+  color: white;
+}
+
+.container {
+  text-align: center;
+  font-size: 3rem;
+}
+.container__titulo {
+  text-align: center;
+  font-size: 3rem;
+}
+.container__vidas {
+  text-align: center;
+  font-size: 2rem;
+}
+.container__input--jogo {
+ 
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  text-align: center;
+  letter-spacing: 1rem;
+  height: 50px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+.container_forca {
+  position: center;
+  background-image: url("forca0.png");
+}
+  
+.container__listatentativas {
+  text-align: center;
+  list-style: none;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  margin-top: 4rem;
+  width: 400px;
+  transform: translateX(-50%);
+}
+.container__listatentativas li {
+  text-align: center;
+  text-decoration: line-through;
+  
+}
+
+
+
+
+
+
+
+  
+
