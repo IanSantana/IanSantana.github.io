@@ -178,9 +178,9 @@ class Jogo {
 function resetJogo() {
   if (completou === jogo.palavra.length || jogo.vidas === 0) {
     if (completou === jogo.palavra.length) {
-      alert("você ganhou, pressione qualquer tecla para jogar novamente.");
+      alert("você ganhou, pressione ok para jogar novamente.");
     } else if (jogo.vidas === 0) {
-      alert("você perdeu, pressione qualquer tecla para jogar novamente.");
+      alert("você perdeu, pressione ok para jogar novamente.");
     }
 
     palavraTela.value = jogo.palavra.join("").toUpperCase();
