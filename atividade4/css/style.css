@@ -1,0 +1,39 @@
+body{
+
+    background-image: url('grama.jpg');
+}
+
+
+#inicio {
+      width: 350px;
+      height: 350px;
+      background-image: url('cobra.png');
+      background-size: auto 350px;
+      background-color: black;
+      background-position: center center;
+      padding: 4px;
+      margin: 03;
+      margin-left: 500px;
+      margin-top: 500px
+      align-items: center;
+    }
+    
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      bottom: 0;
+      height: 30px;
+      font-size: 12pt;
+      float: left;
+      width: 90px;
+      margin: 10px 0 0 0;
+      margin-left: 625px;
+    }
+
+    
+   .jogo {
+      margin: 0 auto;
+    }
+
+ 
