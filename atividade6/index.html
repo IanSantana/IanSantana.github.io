@@ -43,8 +43,7 @@
       function onPlayerStateChange(event) {
         
         if(player.getPlayerState() == '0'){
-         
-          
+          window.location.replace("teste.html");          
         }
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(stopVideo, 6000);

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function escolha1(){
+                window.location.replace("video2a.html"); 
+            }
+            function escolha2(){
+                window.location.replace("video2b.html"); 
+            }
+        </script>
+    </head>
+    <style>
+        .op{
+            
+            width: 50%;
+            height: 50%;
+        }
+        #op1 {
+            float:left;
+        }
+        #op2 {
+            float: right;
+        }
+    </style>
+    <body>
+        <div id="op1" class="op">
+                <input type="button" class="op" value="Sim" onclick="escolha1()">
+        </div>
+        <div id="op2" class="op">
+                <input type="button" class="op" value="Não" onclick="escolha2()">
+        </div>
+
+    </body>
+</html>
