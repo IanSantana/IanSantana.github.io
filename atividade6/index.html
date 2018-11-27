@@ -6,9 +6,13 @@
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
       
-    <div id="player" class="video"></div>
+    <div id="player" class="video"></div> <!-- alterar tempo aqui-->
     <div id="op" class="op"></div>
     <script>
+      var player;
+      var videoId = 'SomeYoutubeIdHere';
+      var videotime = 0;
+      var timeupdater = null;
      var popup =  document.getElementsByClassName("op");
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -23,7 +27,7 @@
         player = new YT.Player('player', {
           height: '500',
           width: '100%',
-          videoId: 'EcVZs36g8XA',
+          videoId: '0Bmhjf0rKe8',
           
           events: {
             
@@ -35,11 +39,25 @@
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-        event.target.playVideo(startSeconds: '5';
-        endSeconds: '60';);
-        
+        event.target.playVideo();
+        player.seekTo(10,true); 
       }
 
+      function updateTime() {
+    var oldTime = videotime;
+    if(player && player.getCurrentTime) {
+      videotime = player.getCurrentTime();
+    }
+    if(videotime !== oldTime) {
+      onProgress(videotime);
+    }
+  }
+  timeupdater = setInterval(updateTime, 100);
+  function onProgress(currentTime) {
+  if(currentTime > 14) {
+    window.location.replace("teste.html");
+  }
+}
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
