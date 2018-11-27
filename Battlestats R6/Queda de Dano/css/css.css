@@ -1,0 +1,29 @@
+.navbar-expand-lg .navbar-nav  li > a {
+    
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.jumbotron{
+    color:white;
+    background: none;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    
+}
+#menu{
+    align-self: center;
+    color: black;
+    opacity: 80%;
+}
+.container{
+    align-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+  
+}
