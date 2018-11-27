@@ -1,0 +1,17 @@
+.navbar-expand-lg .navbar-nav  li > a {
+    
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.jumbotron{
+    color:white;
+    background: none;
+}
+
+#menu{
+    align-self: center;
+    color: black;
+    opacity: 80%;
+} 
