@@ -59,6 +59,7 @@
     var oldTime = videotime;
     if(player && player.getCurrentTime) {
       videotime = player.getCurrentTime();
+      console.log(videotime);
     }
     if(videotime !== oldTime) {
       onProgress(videotime);
@@ -127,18 +128,7 @@
           done = true;
         }
       }
-      function stopVideo() {
-        player.stopVideo();
-
-        /*player.cueVideoById("uG8V9dRqSsw",
-                    0,
-                    "large");*/
-
-        /*player.loadVideoById("uG8V9dRqSsw",
-                    5,
-                    "large");*/
-        //player.setSize(800,800);
-      }
+      
       
     
       
