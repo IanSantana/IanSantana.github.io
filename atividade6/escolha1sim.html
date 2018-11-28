@@ -37,10 +37,22 @@
         });
       }
 
+      
+
+
+
+
+
+
+
+
+
+
+
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
-        player.seekTo(0,true); //tempo de inicio
+        player.seekTo(35,true); //tempo de inicio
       }
 
       function updateTime() {
@@ -55,18 +67,61 @@
   timeupdater = setInterval(updateTime, 100);
   function onProgress(currentTime) {
   if(currentTime > 50) { // tempo final
-    window.location.replace("escolha1.html"); //destino
+    window.location.replace("escolha2.html"); //destino
   }
 }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
       var done = false;
       function onPlayerStateChange(event) {
         
-        if(player.getPlayerState() == '0'){
-          window.location.replace("teste.html");          
-        }
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(stopVideo, 6000);
           done = true;
