@@ -1,0 +1,201 @@
+$(document).ready(function() {
+	$('.tooltip-bottom').poshytip({
+		className: 'tip-twitter',
+		showTimeout: 0,
+		alignTo: 'target',
+		alignX: 'center',
+		alignY: 'bottom',
+		offsetY: 5,
+		allowTipHover: false,
+		fade: false,
+		slide: false
+	});	
+
+	$('.tooltip-top').poshytip({
+		className: 'tip-twitter',
+		showTimeout: 0,
+		alignTo: 'target',
+		alignX: 'center',
+		alignY: 'top',
+		offsetY: 5,
+		allowTipHover: false,
+		fade: false,
+		slide: false
+	});
+
+	if(typeof numWeapons != 'undefined') {
+		setTimeout(function() {
+			for(var i = 0; i < numWeapons; i++) {
+				var data = $('#damage-chart-' + i).data('chart'); 
+				var bullets = $('#damage-chart-' + i).data('bullets');
+				// Casuses chart to be off center because '100' is more characters than '50'
+				//var maxY = data[0].a < 50 ? 50 : data[0].a < 100 ? 100 : 130;
+				var maxY = data[0].a < 100 ? 100 : 130;
+				Morris.Line({
+					element: 'damage-chart-' + i,
+				  	data: $('#damage-chart-' + i).data('chart'),
+				  	xkey: 'x',
+					ykeys: ['a', 'b'],
+					labels: ['Damage', 'Damage (Armor)'],
+					ymin: 0,
+					ymax: maxY,
+				 	gridTextSize: 8,
+					lineWidth: 2,
+					pointSize: 0,
+					hideHover: 'auto',
+					lineColors: ['#FFF'],
+					grid: false,
+					padding: 5,
+					bulletsText: bullets > 1 ? " x " + bullets : "",
+					hoverCallback: function (index, options, content) {
+					    var row = this.data[index];
+					    var content = "<div class='morris-hover-row-label'>Range: " + row.x * 100 + "u</div><div class='morris-hover-point' style='color: #FFF'>Damage: " + row.a + options.bulletsText + "</div>" + 
+					    	"<div class='morris-hover-point' style='color: #FFF'>Damage (Armor): " + row.b + options.bulletsText + "</div>";
+					    return content;
+					}
+				});
+			}
+		}, 100);
+	}
+
+	if($.tablesorter !== undefined) {
+    	$("#data-table").tablesorter({sortList:[[0,0]]});
+	}
+	
+
+	$('#weapons-table').find('.td-damage-chart').mouseover(function() { 
+		$('.morris-hover').css('display', 'none'); 
+	});
+
+	// Toggle specials per row
+	$('#weapons-table').find('.weapon-special-button').click(function() {
+		$this = $(this);
+
+		if($this.data('checked')) {
+			$this.find('.inner').css('visibility', 'hidden');
+			$this.data('checked', false);
+		} else {
+			$this.find('.inner').css('visibility', 'visibile');
+			$this.data('checked', true);
+		}
+
+		$this.parent().parent().find('.weapon-alt').each(function() {
+			$this = $(this);
+
+			var val = $this.html();
+			$this.html($this.data('alt'));
+			$this.data('alt', val);
+		});
+	});
+
+	// Toggle specials per column - needs custom behaviour (for comparison)
+	$('#comparison-table').find('.weapon-special-button').click(function() {
+		$this = $(this);
+
+		if($this.data('checked')) {
+			$this.find('.inner').css('visibility', 'hidden');
+			$this.data('checked', false);
+		} else {
+			$this.find('.inner').css('visibility', 'visibile');
+			$this.data('checked', true);
+		}
+
+		var number = $this.data('weapon-num');
+		$('#comparison-table').find('.weapon-alt-' + number).each(function() {
+			$this = $(this);
+
+			var val = $this.html();
+			$this.html($this.data('alt'));
+			$this.data('alt', val);
+		});
+		sortComparison();
+	});
+
+
+	// Comparison Sorting
+	function sortComparison() {
+		$('#comparison-table').find('.sort-high, .sort-low').each(function() {
+			$this = $(this);
+			$children = $this.children();
+			$weaponOne = $children.eq(1);
+			$weaponTwo = $children.eq(2);
+
+			$weaponOne.removeClass('compare-best compare-worst');
+			$weaponTwo.removeClass('compare-best compare-worst');
+
+			var v1 = $weaponOne.text(),
+				v2 = $weaponTwo.text();
+
+			var number1 = parseFloat(v1);
+			var number2 = parseFloat(v2);
+
+			// Don't compare numbers like strings
+			if(!isNaN(number1) && !isNaN(number2)) {
+				v1 = number1;
+				v2 = number2;
+			}
+
+			if($this.hasClass('sort-high')) {
+				if(v1 > v2) {
+					$weaponOne.addClass('compare-best');
+					$weaponTwo.addClass('compare-worst');
+				} else if (v1 < v2) {
+					$weaponTwo.addClass('compare-best');
+					$weaponOne.addClass('compare-worst');
+				}
+			} else {
+				if(v1 < v2) {
+					$weaponOne.addClass('compare-best');
+					$weaponTwo.addClass('compare-worst');
+				} else if (v1 > v2) {
+					$weaponTwo.addClass('compare-best');
+					$weaponOne.addClass('compare-worst');
+				}
+			}
+		});
+	}
+	sortComparison();
+
+
+
+	// Sidebar ad on large screens
+	var showSidebarAd = window.innerWidth >= 1660;
+	if(showSidebarAd) {
+		$('#sidebar-ad').append('<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-8482635703185884" data-ad-slot="4948604851"></ins><script>');
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	}
+	
+
+	// Sticky elements
+	var $sticky = $('.sticky');
+	if($sticky.length) {
+		var stickyOffsets = [],
+			stickyWidths = [],
+			$window = $(window);
+			
+		$window.scroll(function() {
+			
+			if(stickyOffsets.length == 0) {
+				$.each($sticky, function(index, el) {
+					stickyOffsets[index] = $(el).offset().top;
+					stickyWidths[index] = $(el).width();
+				});
+			}
+
+			$.each($sticky, function(index, el) {
+				$el = $(el);
+				if ($window.scrollTop() >= stickyOffsets[index]) {
+			  		$el.css('width', stickyWidths[index]);
+			  		$el.addClass('stuck');
+			  	} else {
+			  		$el.removeClass('stuck');
+			  		$el.css('width', '');
+			  	}
+			});
+
+		  	
+		});
+	}
+
+});
+

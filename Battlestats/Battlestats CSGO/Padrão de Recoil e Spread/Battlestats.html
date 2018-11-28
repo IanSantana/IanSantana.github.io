@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/images/images.css">
+
+
+<!-- Start >> Meta Tags and Inline Scripts -->
+<title>BattleStats</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v4.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="O Padrão de Recuo de qualquer arma no CS:GO é um resultado de 2 fatores:&quot;Penalidade de precisão &quot; and &quot;recuo&quot;. Take a look at animated Padrão de Recuo and Compensação de Recuo pattern.">
+<link rel="canonical" href="http://csgoskills.com/academy/spray-patterns/">
+<!-- / Yoast SEO plugin. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/images/images.css">
+<link rel="dns-prefetch" href="http://maps.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="CSGO Skills App » Feed" href="http://csgoskills.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="CSGO Skills App » Comments Feed" href="http://csgoskills.com/comments/feed/">
+		<script id="twitter-wjs" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/widgets.txt"></script><script id="facebook-jssdk" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/sdk.txt"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/csgoskills.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.11"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/wp-emoji-release.js" type="text/javascript" defer="defer"></script><script src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/wp-emoji-release.txt" type="text/javascript" defer="defer"></script><script src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/wp-emoji-release.download" type="text/javascript" defer="defer"></script><script src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/wp-emoji-release_002.txt" type="text/javascript" defer="defer"></script>
+		
+<!-- Styles -->
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="pagelines-less-core-css" href="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/compiled-css-core-1540402857.css" type="text/css" media="all">
+<link rel="stylesheet" id="pagelines-less-sections-css" href="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/compiled-css-sections-1540402857.css" type="text/css" media="all">
+<link rel="stylesheet" id="ubermenu-css" href="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/ubermenu.css" type="text/css" media="all">
+<link rel="stylesheet" id="ubermenu-font-awesome-css" href="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="master_font_import-css" href="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/css.txt" type="text/css" media="all">
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/jquery.txt"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/jquery-migrate.txt"></script>
+<link rel="shortcut icon" href="http://csgoskills.com/wp-content/uploads/favicon-96x96.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="http://csgoskills.com/wp-content/uploads/apple-icon-144x144.png">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="pl-share-title" content="Spray Patterns and Compensação de Recuo">
+<meta property="pl-share-url" content="http://csgoskills.com/academy/spray-patterns/">
+<meta property="pl-share-desc" content="Spray Patterns and Compensação de Recuo&nbsp;for all CS:GO Weapons Most popular Rifles Submachine Guns Heavy Machine [...]">
+<meta property="pl-share-img" content="http://csgoskills.com/wp-content/uploads/AK-47-Recoil-Spray-Pattern-animated-e1420555869895.png">
+<link rel="https://api.w.org/" href="http://csgoskills.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://csgoskills.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://csgoskills.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.7.11">
+<link rel="shortlink" href="http://csgoskills.com/?p=674">
+<link rel="alternate" type="application/json+oembed" href="http://csgoskills.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcsgoskills.com%2Facademy%2Fspray-patterns%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://csgoskills.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcsgoskills.com%2Facademy%2Fspray-patterns%2F&amp;format=xml">
+<style id="ubermenu-custom-generated-css">
+/** UberMenu Custom Menu Styles (Customizer) **/
+/* main */
+.ubermenu-main .ubermenu-item .ubermenu-submenu-drop { -webkit-transition-duration:0.1s; -ms-transition-duration:0.1s; transition-duration:0.1s; }
+.ubermenu-main.ubermenu-transition-fade .ubermenu-item .ubermenu-submenu-drop { margin-top:0; }
+.ubermenu-main .ubermenu-nav .ubermenu-item.ubermenu-item-level-0 > .ubermenu-target { font-weight:normal; }
+.ubermenu-main .ubermenu-item-level-0 > .ubermenu-target { color:#ffffff; }
+.ubermenu.ubermenu-main .ubermenu-item-level-0:hover > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-active > .ubermenu-target { color:#ffae41; }
+.ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-item > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-parent > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-ancestor > .ubermenu-target { color:#ffae41; }
+.ubermenu-main .ubermenu-item.ubermenu-item-level-0 > .ubermenu-highlight { color:#ffae41; }
+
+
+/** UberMenu Custom Menu Item Styles (Menu Item Settings) **/
+/* 1149 */  .ubermenu .ubermenu-item-1149 > .ubermenu-target.ubermenu-item-layout-image_left > .ubermenu-target-text { padding-left:58px; }
+
+/* Status: Loaded from Transient */
+
+</style><meta name="apple-itunes-app" content="app-id=946441708">
+<!-- On Ready -->
+<script> /* <![CDATA[ */
+!function ($) {
+jQuery(document).ready(function() {
+})
+}(window.jQuery);
+/* ]]> */
+</script>
+
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spray Patterns and Compensação de Recuo">
+<meta property="og:url" content="http://csgoskills.com/academy/spray-patterns/">
+<meta property="og:description" content="Spray Patterns and Compensação de Recuo&nbsp;for all CS:GO Weapons Most popular Rifles Submachine Guns Heavy Machine guns Guns &nbsp;&nbsp;&nbsp;&nbsp; Basics The Padrão de Recuo of any weapon in CS:GO is …">
+<meta property="article:published_time" content="2015-01-19T08:46:42+00:00">
+<meta property="article:modified_time" content="2015-03-20T17:01:34+00:00">
+<meta property="og:site_name" content="CSGO Skills App">
+<meta property="og:image" content="http://csgoskills.com/wp-content/uploads/AK-47-Recoil-Spray-Pattern-animated-e1420555869895.png">
+<meta property="og:image:width" content="371">
+<meta property="og:image:height" content="371">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:text:title" content="Spray Patterns and Compensação de Recuo">
+<meta name="twitter:image" content="http://csgoskills.com/wp-content/uploads/AK-47-Recoil-Spray-Pattern-animated-e1420555869895.png?w=640">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- End Jetpack Open Graph Tags -->
+		<style type="text/css" id="wp-custom-css">
+			.abtest {
+	color: red;
+}
+
+.abmitte {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 25px;
+}
+
+.abapple {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.abgoogle {
+	display: inline-block;
+	padding-top: 50px;
+}
+
+.guide-image img {
+	height: 170px !important;
+	width: 100% !important;
+}
+
+.guide-text {
+	text-align: center;
+	
+	height: 70px;
+	padding-top: 10px;
+}		</style>
+	<!-- Facebook Sharing -->
+
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/common.txt"></script><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/util_002.txt"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/common_002.txt"></script><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/util.txt"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/common.download"></script><script type="text/javascript" charset="UTF-8" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/util.download"></script></head><body class="page-template-default page page-id-674 page-child parent-pageid-302 dms pl-pro-version responsive full_width pl-save-map-on-load template-none display-full pl-res-desktop"><div id="fb-root" class=" fb_reset fb_reset fb_reset" data-vivaldi-spatnav-clickable="1"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/etLyasxFx7o.htm" style="border: none;" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script data-vivaldi-spatnav-clickable="1">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1581154022113744&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+<script data-vivaldi-spatnav-clickable="1">
+function preloadImages() { // preloads images given as url strings in args, e. g. preloadImages("http://a.b.com/img.jpg", "…")
+
+	var images = new Array();
+	
+	for (i = 0; i < preloadImages.arguments.length; i++) {
+		images[i] = new Image();
+		images[i].src = preloadImages.arguments[i];
+	}
+	
+	images = null;
+}
+
+jQuery(document).ready(function() {
+        
+    preloadImages(
+    	"http://csgoskills.com/wp-content/uploads/logo_48_normal2x.png",
+    	"http://csgoskills.com/wp-content/uploads/logo_48_active@2x.png"
+    );
+    
+    console.log( jQuery("#ubermenu-nav-main-2-main_nav .nav-csgo-shield a") );
+    
+    jQuery("#ubermenu-nav-main-2-main_nav .nav-csgo-shield a span").hover( function(){
+    	jQuery(this).children("img").first().attr('src', 'http://csgoskills.com/wp-content/uploads/logo_48_active@2x.png');
+    }, function(){
+    	jQuery(this).children("img").first().attr('src', 'http://csgoskills.com/wp-content/uploads/logo_48_normal2x.png');
+    });
+        
+});
+</script>
+<style type="text/css" id="pagelines-custom" data-vivaldi-spatnav-clickable="1">
+ .gosufeature a{color:#feed56 !important} #mastheadud48m9c > div.pl-section-pad.fix > header > div > p.download-info > a{:rgba(254,237,86,0.9) !important;color:#3c4344 !important} .gosu-notification-menu a{:rgba(254,237,86,0.9) !important;border-radius:5px !important;margin-top:10px !important;color:#3c4344 !important;font-weight:900 !important;padding:10px !important} .gosu-notification-menu a:hover{-webkit-box-shadow:inset 0px 0px 0px 0px #ffae41 !important;-moz-box-shadow:inset 0px 0px 0px 0px #ffae41 !important;box-shadow:inset 0px 0px 0px 0px #ffae41 !important;:#feed56 !important} .disclaimer p{font-size:11px;color:rgba(255,255,255,0.5);text-align:center;line-height:13px} #iub-pp-container h1,#iub-pp-container h2,#iub-pp-container h3,#iub-pp-container{color:white !important} #iub-pp-container .box_primary h3,#iub-pp-container .box_primary p{color:black} #wbars > div > div.iub_footer > p > a{color:white} #wbars > div > div.iub_footer > p > a:hover{color:white} #navbarur8pbu6 > div.pl-area-pad.fix > div > div > div.navbar-content-pad.fix > a{color:#FDAD4D;font-family:nerislight;font-weight:600;:none;border:none;box-shadow:none} #ubermenu-nav-main-2-mobile_nav li{width:100%;display:block} #ubermenu-nav-main-2-mobile_nav i{width:0px;font-size:36px} #ubermenu-nav-main-2-main_nav i{width:24px;font-size:24px;text-align:center} #postloopu219a3 .entry-content .continue_reading_link a{color:#000 !important;font-family:nerisblack !important;-color:#ffae41 !important} #mastheadud48m9c > div.pl-section-pad.fix > header > div > p.masthead-tag{opacity:1.0} #mediaboxu89lc9d > div.pl-section-pad.fix > div > div{margin-top:0px !important} #pl_areau6fac6{:#2a2c2a !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png);-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),-moz-linear-gradient(top,#2a2c2a 0%,#3e403e 100%) !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),-webkit-gradient(linear,left top,left bottom,color-stop(0%,#2a2c2a),color-stop(100%,#3e403e)) !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),-webkit-linear-gradient(top,#2a2c2a 0%,#3e403e 100%) !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),-o-linear-gradient(top,#2a2c2a 0%,#3e403e 100%) !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),-ms-linear-gradient(top,#2a2c2a 0%,#3e403e 100%) !important;-image:url(http://csgoskills.com/wp-content/uploads/camopattern.png),linear-gradient(to bottom,#2a2c2a 0%,#3e403e 100%) !important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2c2a',endColorstr='#3e403e',GradientType=0) !important} #navbarur8pbu6 > div.pl-area-pad.fix > div{height:75px} .ubermenu-item a{font-size:24px} .ubermenu-item a:hover{-webkit-box-shadow:inset 0px 8px 0px 0px #ffae41;-moz-box-shadow:inset 0px 8px 0px 0px #ffae41;box-shadow:inset 0px 8px 0px 0px #ffae41} li.ubermenu-item.ubermenu-item-type-custom.ubermenu-item-object-custom.ubermenu-current-menu-item a{-webkit-box-shadow:inset 0px 8px 0px 0px #ffae41;-moz-box-shadow:inset 0px 8px 0px 0px #ffae41;box-shadow:inset 0px 8px 0px 0px #ffae41} .nav-csgo-shield img{width:48px;height:48px;margin-top:-8px} body{-color:#2A2C2A;font-family:nerislight} .wp-image-477{border:white solid 1px;border-radius:9px} .watchvideo{font-size:44px;line-height:52px;color:#ffae41;margin-top:96px} .btn-default{-color:#ffae41;text-decoration:none;font-family:nerisblack} .btn-default:hover{-color:#FFB34C} .btn strong,.btn a{color:#2A2C2A;text-decoration:none !important} .leftlist{float:left} .rightlist{float:right} .twoimagesdiv img{padding-right:25px;padding-bottom:25px;display:inline} .twoimages{float:left} .entry-content li{margin-bottom:10px} hr.soften{height:1px;-image:-webkit-linear-gradient(left,transparent,rgba(255,174,65,0.9),transparent);-image:-moz-linear-gradient(left,transparent,rgba(255,174,65,0.9),transparent);-image:-ms-linear-gradient(left,transparent,rgba(255,174,65,0.9),transparent);-image:-o-linear-gradient(left,transparent,rgba(255,174,65,0.9),transparent);border:0} blockquote{font-style:italic;margin-left:45px} #navbarur8pbu6 > div.pl-area-pad.fix > div{-color:#3e403d !important} li {font-size:18px !important;line-height:24px} .guide-box{-color:#202020;height:250px;width:400px;margin:10px 20px 20px 0;float:left;display:inline-block;border:2px solid #D3D3D3} .guide-box:hover{border:2px solid #ffae41} #m1 ul :nth-child(1){text-decoration:underline;text-transform:uppercase} .clearboth{clear:both} .page-id-674 .wp-caption{float:left;-color:#2A2C2A;margin-right:30px;border:none} .page-id-674 .wp-caption-text{font-size:18px} .page-id-674 .wp-caption img,.page-id-674 .wp-caption{min-width:300px;max-width:300px} .page-id-674 .miniweapons .wp-caption{float:left;-color:#2A2C2A;margin-right:3px;margin-bottom:30px} .page-id-674 .miniweapons a{text-decoration:none;font-size:14px;color:white} .page-id-674 .miniweapons .wp-caption img,.page-id-674 .miniweapons .wp-caption{min-width:65px;max-width:65px;min-height:65px;max-height:65px} .page-id-674 h2,.page-id-674 h3{clear:both} .weaponproperties th{-color:#ffae41;border:1px solid #ffae41;color:#2A2C2A;text-align:left} .weaponproperties td{border:1px solid #ffae41} .weaponproperties table{border-collapse:collapse;border-spacing:0;width:400px;margin-left:auto;margin-right:auto} @media (max-width:758px){.image-to-be-hidden-on-mobile{visibility:hidden;display:none !important} #navbarur8pbu6 > div.pl-area-pad.fix > div{height:42px} } h1{font-size:48px;font-family:nerislight} h2{font-size:48px;font-family:nerislight;font-weight:200} h3{font-size:20px;margin-bottom:20px;text-transform:uppercase;font-family:nerislight} h4{font-weight:200;font-size:18px;text-transform:uppercase;font-family:nerislight} h1,h2,h3{color:#ffae41;font-family:nerislight} p{font-size:18px;color:#ffffff;font-family:nerislight} strong,b{font-family:nerissemibold} p a{text-decoration:none} .subtitle{margin-top:0px;line-height:36px} .thesubtitle{margin-top:-48px} .thesubtitle p{margin-top:-24px;font-family:nerislight_italic;font-size:24px;line-height:36px} .subtitle p{font-size:24px;line-height:36px} .ibox-media i{font-size:36px !important;color:#ffae41 !important;margin:16px} .ibox-desc div{color:#73787d} .ibox-media .icon{color:#eee} #textboxuvk2h95 > div.pl-section-pad.fix > div > div > p > a > strong{color:#000;font-family:nerisblack} div.mc-field-group label{position:relative;z-index:2;display:inline;margin-left:10px} div.mc-field-group input{:transparent;border-width:4px;border-radius:15px;height:33px;position:relative;z-index:4;margin-top:0;width:320px} #mc-embedded-subscribe{:orange;border:none;outline:none;border-radius:25px;position:relative;box-shadow:none;z-index:1;width:100px;margin-top:-120px;margin-left:199px} .sign-up-area{width:300px;height:50px;margin-left:auto;margin-right:auto;border:3px solid #FFF;-webkit-border-radius:55px;-moz-border-radius:55px;border-radius:55px;:#ffffff;border-color:#ffffff} .sign-up-area input{box-shadow:none} .sign-up-area input:focus{box-shadow:none} .sign-up-area input[type="text"]{height:50px;line-height:22pt;width:181px;text-align:center;:none;border:none;outline:none;font-size:16px;margin-left:10px;color:#464b50} .sign-up-area input[type="submit"]{width:91px;height:40px;display:inline-block;box-shadow:none;-webkit-border-radius:55px;-moz-border-radius:55px;border-radius:55px;border:none;vertical-align:top;font-size:15pt;font-weight:600;:#282828;color:#ffae41} @font-face{font-family:'nerisblack';src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.eot');src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.woff2') format('woff2'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.woff') format('woff'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.ttf') format('truetype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Black-webfont.svg#nerisblack') format('svg');font-weight:normal;font-style:normal} @font-face{font-family:'nerislight';src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.eot');src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.eot?#iefix') format('embedded-opentype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.woff2') format('woff2'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.woff') format('woff'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.ttf') format('truetype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-Light-webfont.svg#nerislight') format('svg');font-weight:normal;font-style:normal} @font-face{font-family:'nerislight_italic';src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.eot');src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.woff2') format('woff2'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.woff') format('woff'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.ttf') format('truetype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-LightItalic-webfont.svg#nerislight_italic') format('svg');font-weight:normal;font-style:normal} @font-face{font-family:'nerissemibold';src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.eot');src:url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.woff2') format('woff2'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.woff') format('woff'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.ttf') format('truetype'),url('http://csgoskills.com/wp-content/uploads/fonts/Neris-SemiBold-webfont.svg#nerissemibold') format('svg');font-weight:normal;font-style:normal} 
+</style>
+
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <a class="navbar-brand" href="#">
+                <img src="css/images/logo.png" height="40"  id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Guns" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="Guns">
+          <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lista de armas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Status detalhados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Padrão de recoil e spread</a>
+                </li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Rainbow Six Siege</a>
+			</li>
+        </nav>
+
+	
+		<div class="pl-mobile-menu" data-vivaldi-spatnav-clickable="1">
+			
+							
+			<div class="mm-holder">
+				
+				
+				<nav id="ubermenu-main-2-mobile_nav" class="ubermenu ubermenu-main ubermenu-menu-2 ubermenu-loc-mobile_nav ubermenu-responsive-nocollapse ubermenu-horizontal ubermenu-transition-fade ubermenu-trigger-hover_intent ubermenu-skin-none  ubermenu-bar-align-full ubermenu-items-align-left ubermenu-bound-inner ubermenu-sub-indicators ubermenu-retractors-responsive ubermenu-notouch"><ul id="ubermenu-nav-main-2-mobile_nav" class="ubermenu-nav"><li id="menu-item-1152" class="nav-csgo-shield ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-home ubermenu-item-1152 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO SKILLS App Home" href="http://csgoskills.com/" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text"><img src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/logo_48_normal2x.png"></span></a></li><li id="menu-item-1153" class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-1153 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills Features" href="http://csgoskills.com/features/" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text">features</span></a></li><li id="menu-item-299" class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-299 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills Blog" href="http://csgoskills.com/blog/" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text">blog</span></a></li><li id="menu-item-300" class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-300 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills Academy" href="http://csgoskills.com/academy/" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text">academy</span></a></li><li id="menu-item-301" class="nav-last-icon ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-301 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills Support" href="http://csgoskills.com/imprint/" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text">support</span></a></li><li id="menu-item-1240" class="storemenuitem ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-1240 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills on Apple App Store" target="_blank" rel="nofollow" href="https://itunes.apple.com/app/id946441708?mt=8" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text"><i class="fa fa-apple"></i></span></a></li><li id="menu-item-1241" class="storemenuitem ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-1241 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto"><a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" title="CSGO Skills on Google Play Store" target="_blank" href="https://play.google.com/store/apps/details?id=com.mapleapps.android.csgoskills" tabindex="0"><span class="ubermenu-target-title ubermenu-target-text"><i class="fa fa-android"></i></span></a></li></ul></nav>				<div class="social-menu">
+					
+									</div>
+			</div>
+		</div>
+		
+
+<div id="site" class="site-wrap" data-vivaldi-spatnav-clickable="1">
+		<div class="boxed-wrap site-translate">
+				
+		
+		<div class="pl-region-wrap">
+			<div id="page" class="thepage page-wrap">
+
+								<div class="page-canvas">
+					
+						<header id="header" class="header pl-region" data-region="header">
+		<div class="outline pl-area-container">
+			
+
+<!-- NavBar | Section Template -->
+<section id="navbarur8pbu6" data-object="PLNavBar" data-sid="navbar" data-clone="ur8pbu6" class="pl-area pl-area-sortable area-tag    pl-bg-cover section-navbar" style="  "><div class="pl-area-pad fix">	
+</div></section>		</div>
+	</header>
+
+						
+					<div id="page-main" class="pl-region" data-region="template">
+						<div id="dynamic-content" class="outline template-region-wrap pl-area-container">
+							
+
+
+<!-- Canvas Area | Section Template -->
+<section id="pl_areau91730" data-object="PLSectionArea" data-sid="pl_area" data-clone="u91730" class="pl-area pl-area-sortable area-tag    pl-bg-repeat section-pl_area" style="-image: url(http://csgoskills.com/wp-content/uploads/camopattern.png);  "><div class="pl-area-pad fix">	<div class="pl-area-wrap " style="padding-top: 20px; padding-bottom: 20px;">
+
+		<div class="pl-content nested-section-area">
+						<div class="pl-inner area-region pl-sortable-area editor-row" style="">
+				<div class="row grid-row">
+
+<!-- WP Content/Loop | Section Template -->
+<section id="postloopu917a3" data-object="PageLinesPostLoop" data-sid="postloop" data-clone="u917a3" class="pl-section span10 offset1    pl-bg-cover single-post section-postloop" style="  "><div class="pl-section-pad fix"><div class="pl-new-loop">			<article id="post-674" class=" standard-page pl-border hentry pl-new-loop post-674 page type-page status-publish has-post-thumbnail">
+
+				
+									<header class="entry-header">
+											</header><!-- .entry-header -->
+								<div class="entry-content">
+					<p><a name="top"></a></p>
+
+<div class="miniweapons">
+<div></div>
+<div class="clearboth"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearboth"></div>
+<div class="clearboth"></div>
+<hr class="soften">
+
+<h2>O Básico</h2>
+<p>O padrão de recuo de todas as armas no CS:GO é um resultado de:</p>
+<ol>
+<li><strong>Penalidade de Precisão</strong></li>
+<li><strong>Recuo</strong></li>
+</ol>
+<p>&nbsp;</p>
+<h3>Penalidade de Precisão</h3>
+<p>Penalidade de precisão adiciona um fator aleatório ao padrão fixo de 
+recuo, é diferente para todas as armas e afetado por pelos seguintes 
+fatores:</p>
+<ul>
+<li>Correndo &gt; Andando &gt; Parado &gt; Abaixado</li>
+<li>Pulando</li>
+<li>Subindo em escadas</li>
+<li>Número de disparos / tempo</li>
+
+</ul>
+
+<h3>Recuo</h3>
+<p>Recuo é o padrão fixo e único para cada arma e modificador de arma 
+(Mirando ou silenciado). Geralmente o recuo empurra a arma para cima e 
+para os lados. </p>
+<ul>
+
+</ul>
+<p>O efeito do recuo é reiniciado quando você para de atirar e espera até que:</p>
+<ul>
+<li>a mira dinâmica volte ao normal</li>
+<li>o modelo da arma volta para sua posição inicial</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Compensação</h3>
+<p>Você provavelmente já aprendeu a puxar a arma para baixo com o 
+objetivo de anular o recuo vertical. Quando essa técnica estiver 
+dominada você pode aprender a a fazer o mesmo para o recuo horizontal 
+também. As animações encontradas a seguir devem te ajudar a entender o 
+conceito geral do padrão de recuo e do movimento do mouse necessário 
+para compensar pelo mesmo.</p>
+
+<hr class="soften">
+
+<p><a name="Rifles"></a></p>
+<h2>Rifles</h2>
+<p><a name="AK-47"></a></p>
+<h2></h2>
+<h3>AK-47</h3>
+<div id="attachment_681" style="width: 382px" class="wp-caption alignnone"><img class="size-full wp-image-681" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Ak-47-Spray-Pattern.gif" alt="Ak-47 Padrão de Recuo" height="649" width="372"><p class="wp-caption-text">Ak-47 Padrão de Recuo</p></div>
+<div id="attachment_680" style="width: 382px" class="wp-caption alignnone"><img class="size-full wp-image-680" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AK-47-Recoil-Compensation.gif" alt="AK-47 Compensação de Recuo" height="649" width="372"><p class="wp-caption-text">AK-47 Compensação de Recuo</p></div>
+<p><a name="M4A4"></a></p>
+<h3>M4A4</h3>
+<div id="attachment_709" style="width: 334px" class="wp-caption alignnone"><img class="size-full wp-image-709" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A4-Spray-Pattern.gif" alt="M4A4 Padrão de Recuo" height="564" width="324"><p class="wp-caption-text">M4A4 Padrão de Recuo</p></div>
+<div id="attachment_708" style="width: 334px" class="wp-caption alignnone"><img class="size-full wp-image-708" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A4-Recoil-Compensation.gif" alt="M4A4 Compensação de Recuo" height="564" width="324"><p class="wp-caption-text">M4A4 Compensação de Recuo</p></div>
+<p><a name="m4a1s"></a></p>
+<h3>M4A1-S</h3>
+<div id="attachment_707" style="width: 334px" class="wp-caption alignnone"><img class="size-full wp-image-707" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A1-S-Spray-Pattern.gif" alt="M4A1-S Padrão de Recuo" height="487" width="324"><p class="wp-caption-text">M4A1-S Padrão de Recuo</p></div>
+<div id="attachment_706" style="width: 334px" class="wp-caption alignnone"><img class="size-full wp-image-706" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A1-S-Recoil-Compensation.gif" alt="M4A1-S Compensação de Recuo" height="487" width="324"><p class="wp-caption-text">M4A1-S Compensação de Recuo</p></div>
+<p><a name="M4A1"></a></p>
+<h3>M4A1</h3>
+<div id="attachment_812" style="width: 346px" class="wp-caption alignnone"><img class="size-full wp-image-812" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A1-Spray-Pattern.gif" alt="M4A1 Padrão de Recuo" height="585" width="336"><p class="wp-caption-text">M4A1 Padrão de Recuo</p></div>
+<div id="attachment_813" style="width: 346px" class="wp-caption alignnone"><img class="size-full wp-image-813" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M4A1-Recoil-Compensation.gif" alt="M4A1 Compensação de Recuo" height="585" width="336"><p class="wp-caption-text">M4A1 Compensação de Recuo</p></div>
+<p><a name="Galil"></a></p>
+<h3>Galil</h3>
+<div id="attachment_703" style="width: 406px" class="wp-caption alignnone"><img class="size-full wp-image-703" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Galil-Spray-Pattern.gif" alt="Galil Padrão de Recuo" height="501" width="396"><p class="wp-caption-text">Galil Padrão de Recuo</p></div>
+<div id="attachment_702" style="width: 406px" class="wp-caption alignnone"><img class="size-full wp-image-702" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Galil-Recoil-Compensation.gif" alt="Galil Compensação de Recuo" height="501" width="396"><p class="wp-caption-text">Galil Compensação de Recuo</p></div>
+<p><a name="SSG 08"></a></p>
+<h3>SSG 08</h3>
+<div id="attachment_738" style="width: 310px" class="wp-caption alignnone"><img class="size-full wp-image-738" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SSG-08-Spray-Pattern.gif" alt="SSG 08 Padrão de Recuo" height="219" width="300"><p class="wp-caption-text">SSG 08 Padrão de Recuo</p></div>
+<div id="attachment_739" style="width: 310px" class="wp-caption alignnone"><img class="size-full wp-image-739" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SSG-08-Recoil-Compensation.gif" alt="SSG 08 Compensação de Recuo" height="219" width="300"><p class="wp-caption-text">SSG 08 Compensação de Recuo</p></div>
+<p><a name="sg553"></a></p>
+<h3>SG 553</h3>
+<div id="attachment_737" style="width: 572px" class="wp-caption alignnone"><img class="size-full wp-image-737" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SG-553-Spray-Pattern.gif" alt="SG 553 Padrão de Recuo" height="663" width="562"><p class="wp-caption-text">SG 553 Padrão de Recuo</p></div>
+<div id="attachment_734" style="width: 572px" class="wp-caption alignnone"><img class="size-full wp-image-734" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SG-553-Recoil-Compensation.gif" alt="SG 553 Compensação de Recuo" height="663" width="562"><p class="wp-caption-text">SG 553 Compensação de Recuo</p></div>
+<p><a name="G3SG1"></a></p>
+<h3>G3SG1</h3>
+<div id="attachment_701" style="width: 297px" class="wp-caption alignnone"><img class="size-full wp-image-701" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/G3SG1-Spray-Pattern.gif" alt="G3SG1 Padrão de Recuo" height="272" width="287"><p class="wp-caption-text">G3SG1 Padrão de Recuo</p></div>
+<div id="attachment_700" style="width: 297px" class="wp-caption alignnone"><img class="size-full wp-image-700" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/G3SG1-Recoil-Compensation.gif" alt="G3SG1 Compensação de Recuo" height="272" width="287"><p class="wp-caption-text">G3SG1 Compensação de Recuo</p></div>
+<p><a name="FAMAS"></a></p>
+<h3>FAMAS</h3>
+<div id="attachment_697" style="width: 403px" class="wp-caption alignnone"><img class="size-full wp-image-697" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/FAMAS-Spray-Pattern.gif" alt="FAMAS Padrão de Recuo" height="488" width="393"><p class="wp-caption-text">FAMAS Padrão de Recuo</p></div>
+<div id="attachment_696" style="width: 403px" class="wp-caption alignnone"><img class="size-full wp-image-696" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/FAMAS-Recoil-Compensation.gif" alt="FAMAS Compensação de Recuo" height="488" width="393"><p class="wp-caption-text">FAMAS Compensação de Recuo</p></div>
+<p><a name="SSG 08"></a></p>
+<h3>SSG 08</h3>
+<div id="attachment_738" style="width: 310px" class="wp-caption alignnone"><img class="size-full wp-image-738" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SSG-08-Spray-Pattern.gif" alt="SSG 08 Padrão de Recuo" height="219" width="300"><p class="wp-caption-text">SSG 08 Padrão de Recuo</p></div>
+<div id="attachment_739" style="width: 310px" class="wp-caption alignnone"><img class="size-full wp-image-739" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SSG-08-Recoil-Compensation.gif" alt="SSG 08 Compensação de Recuo" height="219" width="300"><p class="wp-caption-text">SSG 08 Compensação de Recuo</p></div>
+<p><a name="AUG"></a></p>
+<h3>AUG</h3>
+<div id="attachment_685" style="width: 406px" class="wp-caption alignnone"><img class="size-full wp-image-685" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AUG-Spray-Pattern.gif" alt="AUG Padrão de Recuo" height="623" width="396"><p class="wp-caption-text">AUG Padrão de Recuo</p></div>
+<div id="attachment_682" style="width: 406px" class="wp-caption alignnone"><img class="size-full wp-image-682" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AUG-Recoil-Compensation.gif" alt="AUG Compensação de Recuo" height="623" width="396"><p class="wp-caption-text">AUG Compensação de Recuo</p></div>
+<p><a name="AUG scoped"></a></p>
+<h3>AUG Mirando</h3>
+<div id="attachment_684" style="width: 541px" class="wp-caption alignnone"><img class="size-full wp-image-684" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AUG-scoped-Spray-Pattern.gif" alt="AUG scoped Padrão de Recuo" height="444" width="531"><p class="wp-caption-text">AUG Mirando Padrão de Recuo</p></div>
+<div id="attachment_683" style="width: 541px" class="wp-caption alignnone"><img class="size-full wp-image-683" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AUG-scoped-Recoil-Compensation.gif" alt="AUG scoped Compensação de Recuo" height="444" width="531"><p class="wp-caption-text">AUG Mirando Compensação de Recuo</p></div>
+<h3>AWP</h3>
+<div id="attachment_687" style="width: 225px" class="wp-caption alignnone"><img class="size-full wp-image-687" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AWP-Spray-Pattern.gif" alt="AWP Padrão de Recuo" height="219" width="215"><p class="wp-caption-text">AWP Padrão de Recuo</p></div>
+<div id="attachment_686" style="width: 225px" class="wp-caption alignnone"><img class="size-full wp-image-686" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/AWP-Recoil-Compensation.gif" alt="AWP Compensação de Recuo" height="219" width="215"><p class="wp-caption-text">AWP Compensação de Recuo</p></div>
+<p><a name="SCAR-20"></a></p>
+<h3>SCAR-20</h3>
+<div id="attachment_733" style="width: 369px" class="wp-caption alignnone"><img class="size-full wp-image-733" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SCAR-20-Spray-Pattern.gif" alt="SCAR-20 Padrão de Recuo" height="275" width="359"><p class="wp-caption-text">SCAR-20 Padrão de Recuo</p></div>
+<div id="attachment_732" style="width: 369px" class="wp-caption alignnone"><img class="size-full wp-image-732" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/SCAR-20-Recoil-Compensation.gif" alt="SCAR-20 Compensação de Recuo" height="275" width="359"><p class="wp-caption-text">SCAR-20 Compensação de Recuo</p></div>
+<hr class="soften">
+
+
+<p><a name="submachineguns"></a></p>
+<h2>Submetralhadoras</h2>
+<p><a name="MAC-10"></a></p>
+<h3>MAC-10</h3>
+<div id="attachment_713" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-713" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAC-10-Spray-Pattern.gif" alt="MAC-10 Padrão de Recuo" height="521" width="339"><p class="wp-caption-text">MAC-10 Padrão de Recuo</p></div>
+<div id="attachment_712" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-712" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAC-10-Recoil-Compensation.gif" alt="MAC-10 Compensação de Recuo" height="521" width="339"><p class="wp-caption-text">MAC-10 Compensação de Recuo</p></div>
+<p><a name="MP9"></a></p>
+<h3>MP9</h3>
+<div id="attachment_713" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-713" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAC-10-Spray-Pattern.gif" alt="MAC-10 Padrão de Recuo" height="521" width="339"><p class="wp-caption-text">MAC-10 Padrão de Recuo</p></div>
+<div id="attachment_712" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-712" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAC-10-Recoil-Compensation.gif" alt="MAC-10 Compensação de Recuo" height="521" width="339"><p class="wp-caption-text">MAC-10 Compensação de Recuo</p></div>
+<p><a name="MP7"></a></p>
+<h3>MP7</h3>
+<div id="attachment_717" style="width: 234px" class="wp-caption alignnone"><img class="size-full wp-image-717" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MP7-Spray-Pattern.gif" alt="MP7 Padrão de Recuo" height="455" width="224"><p class="wp-caption-text">MP7 Padrão de Recuo</p></div>
+<div id="attachment_716" style="width: 234px" class="wp-caption alignnone"><img class="wp-image-716 size-full" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MP7-Recoil-Compensation.gif" alt="MP7 Compensação de Recuo" height="455" width="224"><p class="wp-caption-text">MP7 Compensação de Recuo</p></div>
+<p><a name="UMP-45"></a></p>
+<h3>UMP-45</h3>
+<div id="attachment_743" style="width: 356px" class="wp-caption alignnone"><img class="size-full wp-image-743" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/UMP-45-Spray-Pattern.gif" alt="UMP-45 Padrão de Recuo" height="567" width="346"><p class="wp-caption-text">UMP-45 Padrão de Recuo</p></div>
+<div id="attachment_742" style="width: 356px" class="wp-caption alignnone"><img class="size-full wp-image-742" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/UMP-45-Recoil-Compensation.gif" alt="UMP-45 Compensação de Recuo" height="567" width="346"><p class="wp-caption-text">UMP-45 Compensação de Recuo</p></div>
+<p><a name="PP-Bizon"></a></p>
+<h3>PP-Bizon</h3>
+<div id="attachment_689" style="width: 530px" class="wp-caption alignnone"><img class="size-full wp-image-689" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Bizon-Spray-Pattern.gif" alt="PP-Bizon Padrão de Recuo" height="495" width="520"><p class="wp-caption-text">PP-Bizon Padrão de Recuo</p></div>
+<div id="attachment_688" style="width: 530px" class="wp-caption alignnone"><img class="size-full wp-image-688" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Bizon-Recoil-Compensation.gif" alt="PP-Bizon Compensação de Recuo" height="495" width="520"><p class="wp-caption-text">PP-Bizon Compensação de Recuo</p></div>
+<p><a name="P90"></a></p>
+<h3>P90</h3>
+<div id="attachment_725" style="width: 432px" class="wp-caption alignnone"><img class="size-full wp-image-725" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P90-Spray-Pattern.gif" alt="P90 Padrão de Recuo" height="503" width="422"><p class="wp-caption-text">P90 Padrão de Recuo</p></div>
+<div id="attachment_724" style="width: 432px" class="wp-caption alignnone"><img class="size-full wp-image-724" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P90-Recoil-Compensation.gif" alt="P90 Compensação de Recuo" height="503" width="422"><p class="wp-caption-text">P90 Compensação de Recuo</p></div>
+<hr class="soften">
+
+
+<p><a name="Heavy"></a></p>
+<h2>Escopetas</h2>
+<p><a name="Nova"></a></p>
+<h3>Nova</h3>
+<div id="attachment_723" style="width: 240px" class="wp-caption alignnone"><img class="size-full wp-image-723" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Nova-Spray-Pattern.gif" alt="Nova Padrão de Recuo" height="222" width="230"><p class="wp-caption-text">Nova Padrão de Recuo</p></div>
+<div id="attachment_722" style="width: 240px" class="wp-caption alignnone"><img class="size-full wp-image-722" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Nova-Recoil-Compensation.gif" alt="Nova Compensação de Recuo" height="222" width="230"><p class="wp-caption-text">Nova Compensação de Recuo</p></div>
+<p><a name="Sawed-Off"></a></p>
+<h3>Sawed-Off</h3>
+<div id="attachment_731" style="width: 419px" class="wp-caption alignnone"><img class="size-full wp-image-731" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Sawed-off-Spray-Pattern.gif" alt="Sawed-off Padrão de Recuo" height="223" width="409"><p class="wp-caption-text">Sawed-off Padrão de Recuo</p></div>
+<div id="attachment_730" style="width: 419px" class="wp-caption alignnone"><img class="size-full wp-image-730" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Sawed-off-Recoil-Compensation.gif" alt="Sawed-off Compensação de Recuo" height="223" width="409"><p class="wp-caption-text">Sawed-off Compensação de Recuo</p></div>
+<p><a name="XM1014"></a></p>
+<h3>XM1014</h3>
+<div id="attachment_747" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-747" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/XM1014-Spray-Pattern.gif" alt="XM1014 Padrão de Recuo" height="379" width="339"><p class="wp-caption-text">XM1014 Padrão de Recuo</p></div>
+<div id="attachment_746" style="width: 349px" class="wp-caption alignnone"><img class="size-full wp-image-746" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/XM1014-Recoil-Compensation.gif" alt="XM1014 Compensação de Recuo" height="379" width="339"><p class="wp-caption-text">XM1014 Compensação de Recuo</p></div>
+<p><a name="MAG-7"></a></p>
+<h3>MAG-7</h3>
+<div id="attachment_715" style="width: 297px" class="wp-caption alignnone"><img class="size-full wp-image-715" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAG-7-Spray-Pattern.gif" alt="MAG-7 Padrão de Recuo" height="222" width="287"><p class="wp-caption-text">MAG-7 Padrão de Recuo</p></div>
+<div id="attachment_714" style="width: 297px" class="wp-caption alignnone"><img class="size-full wp-image-714" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/MAG-7-Recoil-Compensation.gif" alt="MAG-7 Compensação de Recuo" height="222" width="287"><p class="wp-caption-text">MAG-7 Compensação de Recuo</p></div>
+<hr class="soften">
+<p><a name="Machine guns"></a></p>
+<h2>Metralhadoras Leves</h2>
+<p><a name="M249"></a></p>
+<h3>M249</h3>
+<div id="attachment_711" style="width: 411px" class="wp-caption alignnone"><img class="size-full wp-image-711" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M249-Spray-Pattern.gif" alt="M249 Padrão de Recuo" height="706" width="401"><p class="wp-caption-text">M249 Padrão de Recuo</p></div>
+<div id="attachment_710" style="width: 411px" class="wp-caption alignnone"><img class="size-full wp-image-710" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/M249-Recoil-Compensation.gif" alt="M249 Compensação de Recuo" height="706" width="401"><p class="wp-caption-text">M249 Compensação de Recuo</p></div>
+<p><a name="Negev"></a></p>
+<h3>Negev</h3>
+<div id="attachment_721" style="width: 569px" class="wp-caption alignnone"><img class="size-full wp-image-721" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Negev-Spray-Pattern.gif" alt="Negev Padrão de Recuo" height="818" width="559"><p class="wp-caption-text">Negev Padrão de Recuo</p></div>
+<div id="attachment_720" style="width: 569px" class="wp-caption alignnone"><img class="size-full wp-image-720" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Negev-Recoil-Compensation.gif" alt="Negev Compensação de Recuo" height="818" width="559"><p class="wp-caption-text">Negev Compensação de Recuo</p></div>
+<hr class="soften">
+
+
+<p><a name="Guns"></a></p>
+<h2>Pistolas</h2>
+<p><a name="Glock-18"></a></p>
+<h3>Glock-18</h3>
+<div id="attachment_705" style="width: 254px" class="wp-caption alignnone"><img class="size-full wp-image-705" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Glock-18-Spray-Pattern.gif" alt="Glock-18 Padrão de Recuo" height="286" width="244"><p class="wp-caption-text">Glock-18 Padrão de Recuo</p></div>
+<div id="attachment_704" style="width: 254px" class="wp-caption alignnone"><img class="size-full wp-image-704" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Glock-18-Recoil-Compensation.gif" alt="Glock-18 Compensação de Recuo" height="286" width="244"><p class="wp-caption-text">Glock-18 Compensação de Recuo</p></div>
+<p><a name="P2000"></a></p>
+<h3>P2000</h3>
+<div id="attachment_729" style="width: 285px" class="wp-caption alignnone"><img class="size-full wp-image-729" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P2000-Spray-Pattern.gif" alt="P2000 Padrão de Recuo" height="348" width="275"><p class="wp-caption-text">P2000 Padrão de Recuo</p></div>
+<div id="attachment_728" style="width: 285px" class="wp-caption alignnone"><img class="size-full wp-image-728" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P2000-Recoil-Compensation.gif" alt="P2000 Compensação de Recuo" height="348" width="275"><p class="wp-caption-text">P2000 Compensação de Recuo</p></div>
+<p><a name="P250"></a></p>
+<h3>P250</h3>
+<div id="attachment_727" style="width: 240px" class="wp-caption alignnone"><img class="size-full wp-image-727" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P250-Spray-Pattern.gif" alt="P250 Padrão de Recuo" height="395" width="230"><p class="wp-caption-text">P250 Padrão de Recuo</p></div>
+<div id="attachment_726" style="width: 240px" class="wp-caption alignnone"><img class="size-full wp-image-726" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/P250-Recoil-Compensation.gif" alt="P250 Compensação de Recuo" height="395" width="230"><p class="wp-caption-text">P250 Compensação de Recuo</p></div>
+<p><a name="USP-S"></a></p>
+<h3>USP-S</h3>
+<div id="attachment_745" style="width: 275px" class="wp-caption alignnone"><img class="size-full wp-image-745" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/USP-S-Spray-Pattern.gif" alt="USP-S Padrão de Recuo" height="313" width="265"><p class="wp-caption-text">USP-S Padrão de Recuo</p></div>
+<div id="attachment_744" style="width: 275px" class="wp-caption alignnone"><img class="size-full wp-image-744" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/USP-S-Recoil-Compensation.gif" alt="USP-S Compensação de Recuo" height="313" width="265"><p class="wp-caption-text">USP-S Compensação de Recuo</p></div>
+<p><a name="Desert Eagle"></a></p>
+<h3>Desert Eagle</h3>
+<div id="attachment_692" style="width: 312px" class="wp-caption alignnone"><img class="size-full wp-image-692" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Deagle-Eagle-Recoil-Spray-Pattern.gif" alt="Deagle Eagle Recoil Padrão de Recuo" height="419" width="302"><p class="wp-caption-text">Deagle Eagle Recoil Padrão de Recuo</p></div>
+<div id="attachment_693" style="width: 312px" class="wp-caption alignnone"><img class="size-full wp-image-693" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Desert-Eagle-Recoil-Compensation.gif" alt="Desert Eagle Compensação de Recuo" height="419" width="302"><p class="wp-caption-text">Desert Eagle Compensação de Recuo</p></div>
+<p><a name="Dual Berettas"></a></p>
+<h3>Dual Berettas</h3>
+<div id="attachment_695" style="width: 538px" class="wp-caption alignnone"><img class="size-full wp-image-695" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Dual-Berettas-Spray-Pattern.gif" alt="Dual Berettas Padrão de Recuo" height="523" width="528"><p class="wp-caption-text">Dual Berettas Padrão de Recuo</p></div>
+<div id="attachment_694" style="width: 538px" class="wp-caption alignnone"><img class="size-full wp-image-694" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Dual-Berettas-Recoil-Compensation.gif" alt="Dual Berettas Compensação de Recuo" height="523" width="528"><p class="wp-caption-text">Dual Berettas Compensação de Recuo</p></div>
+<p><a name="Tec-9"></a></p>
+<h3>Tec-9</h3>
+<div id="attachment_741" style="width: 331px" class="wp-caption alignnone"><img class="size-full wp-image-741" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Tec-9-Spray-Pattern.gif" alt="Tec-9 Padrão de Recuo" height="532" width="321"><p class="wp-caption-text">Tec-9 Padrão de Recuo</p></div>
+<div id="attachment_740" style="width: 331px" class="wp-caption alignnone"><img class="size-full wp-image-740" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Tec-9-Recoil-Compensation.gif" alt="Tec-9 Compensação de Recuo" height="532" width="321"><p class="wp-caption-text">Tec-9 Compensação de Recuo</p></div>
+<p><a name="cz75auto"></a></p>
+<h3>CZ75-Auto</h3>
+<div id="attachment_691" style="width: 289px" class="wp-caption alignnone"><img class="size-full wp-image-691" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/CZ75A-Spray-Pattern.gif" alt="CZ75A Padrão de Recuo" height="425" width="279"><p class="wp-caption-text">CZ75A Padrão de Recuo</p></div>
+<div id="attachment_690" style="width: 289px" class="wp-caption alignnone"><img class="size-full wp-image-690" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/CZ75A-Recoil-Compensation.gif" alt="CZ75A Compensação de Recuo" height="425" width="279"><p class="wp-caption-text">CZ75A Compensação de Recuo</p></div>
+<p><a name="fiveseven"></a></p>
+<h3>Five-Seven</h3>
+<div id="attachment_699" style="width: 440px" class="wp-caption alignnone"><img class="size-full wp-image-699" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Five-seven-Spray-Pattern.gif" alt="Five-seven Padrão de Recuo" height="370" width="430"><p class="wp-caption-text">Five-seven Padrão de Recuo</p></div>
+<div id="attachment_698" style="width: 440px" class="wp-caption alignnone"><img class="size-full wp-image-698" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/Five-seven-Recoil-Compensation.gif" alt="Five-seven Compensação de Recuo" height="370" width="430"><p class="wp-caption-text">Five-seven Compensação de Recuo</p></div>
+<hr class="soften">
+
+
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+			</div></div></section></div>			</div>
+		</div>
+	</div>
+	</div></section>
+</body>
+<!-- Canvas Area | Section Template -->
+<section id="pl_areaudjpg6y" data-object="PLSectionArea" data-sid="pl_area" data-clone="udjpg6y" class="pl-area pl-area-sortable area-tag    pl-bg-cover section-pl_area" style="-image: url "><div class="pl-area-pad fix">	
+	</div></section>						</div>
+												<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+				<footer id="footer" class="footer pl-region" data-region="footer">
+		<div class="page-area outline pl-area-container fix">
+		
+
+<!-- Canvas Area | Section Template -->
+<section id="pl_areauc4d28" data-object="PLSectionArea" data-sid="pl_area" data-clone="uc4d28" class="pl-area pl-area-sortable area-tag 0   pl-bg-cover section-pl_area" style=" -color: #3E403E; "><div class="pl-area-pad fix">	
+	</div></section>		</div>
+	</footer>
+
+				
+		</div>		
+	</div>
+		
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Footer Scripts -->
+
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/script_003.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/pl_002.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/script.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" data-vivaldi-spatnav-clickable="1">
+/* <![CDATA[ */
+var plKarma = {"ajaxurl":"http:\/\/csgoskills.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/pl.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/script_002.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/navbar.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/js.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" data-vivaldi-spatnav-clickable="1">
+/* <![CDATA[ */
+var ubermenu_data = {"remove_conflicts":"on","reposition_on_load":"off","intent_delay":"300","intent_interval":"100","intent_threshold":"7","scrollto_offset":"50","scrollto_duration":"1000","responsive_breakpoint":"0","accessible":"on","retractor_display_strategy":"responsive","touch_off_close":"on","v":"3.1.1","ajax_url":"http:\/\/csgoskills.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/ubermenu.txt" data-vivaldi-spatnav-clickable="1"></script>
+<script type="text/javascript" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/wp-embed.txt" data-vivaldi-spatnav-clickable="1" gapi_processed="true"></script>
+
+<iframe scrolling="no" allowtransparency="true" src="./Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_files/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_arquivos/saved_resource.htm" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" src="./Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_files/saved_resource%281%29.html" frameborder="0"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Spray%20Patterns%20and%20Recoil%20Compensation%20_%20CSGO%20Skills%20App_files/saved_resource%282%29.html" frameborder="0"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
