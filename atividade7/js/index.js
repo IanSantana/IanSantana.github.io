@@ -1,12 +1,13 @@
 
+// Allow for vendor prefixes.
 window.requestFileSystem = window.requestFileSystem ||
                            window.webkitRequestFileSystem;
 
 
-
+// Create a variable that will store a reference to the FileSystem.
 var filesystem = null;
 
-
+// Get references to the page elements.
 var form = document.getElementById('file-form');
 var filenameInput = document.getElementById('filename');
 var contentTextArea = document.getElementById('content');
@@ -16,6 +17,7 @@ var fileList = document.getElementById('file-list');
 var messageBox = document.getElementById('messages');
 
 
+// A simple error handler to be used throughout this demo.
 function errorHandler(error) {
   var message = '';
 
@@ -44,20 +46,21 @@ function errorHandler(error) {
 }
 
 
+// Request a FileSystem and set the filesystem variable.
 function initFileSystem() {
   navigator.webkitPersistentStorage.requestQuota(1024 * 1024 * 5,
     function(grantedSize) {
 
-
+      // Request a file system with the new size.
       window.requestFileSystem(window.PERSISTENT, grantedSize, function(fs) {
 
-  
+        // Set the filesystem variable.
         filesystem = fs;
 
-    
+        // Setup event listeners on the form.
         setupFormEventListener();
 
-    
+        // Update the file browser.
         listFiles();
 
       }, errorHandler);
@@ -73,7 +76,7 @@ function loadFile(filename) {
       var reader = new FileReader();
 
       reader.onload = function(e) {
-
+        // Update the form fields.
         filenameInput.value = filename;
         contentTextArea.value = this.result;
       };
@@ -86,7 +89,7 @@ function loadFile(filename) {
 
 
 function displayEntries(entries) {
-
+  // Clear out the current file browser entries.
   fileList.innerHTML = '';
 
   entries.forEach(function(entry, i) {
@@ -104,13 +107,15 @@ function displayEntries(entries) {
 
     fileList.appendChild(li);
 
-
+    // Setup an event listener that will load the file when the link
+    // is clicked.
     link.addEventListener('click', function(e) {
       e.preventDefault();
       loadFile(entry.name);
     });
 
-
+    // Setup an event listener that will delete the file when the delete link
+    // is clicked.
     delLink.addEventListener('click', function(e) {
       e.preventDefault();
       deleteFile(entry.name);
@@ -138,25 +143,27 @@ function listFiles() {
 }
 
 
-
+// Save a file in the FileSystem.
 function saveFile(filename, content) {
   filesystem.root.getFile(filename, {create: true}, function(fileEntry) {
 
     fileEntry.createWriter(function(fileWriter) {
 
       fileWriter.onwriteend = function(e) {
-       
+        // Update the file browser.
         listFiles();
 
-       
+        // Clean out the form field.
         filenameInput.value = '';
         contentTextArea.value = '';
 
+        // Show a saved message.
         messageBox.innerHTML = 'Arquivo salvo!';
       };
 
       fileWriter.onerror = function(e) {
-        
+        console.log('Write error: ' + e.toString());
+        alert('Algum problema ocorreu e não foi salvo!');
       };
 
       var contentBlob = new Blob([content], {type: 'text/plain'});
@@ -173,28 +180,36 @@ function deleteFile(filename) {
   filesystem.root.getFile(filename, {create: false}, function(fileEntry) {
 
     fileEntry.remove(function(e) {
-      
+      // Update the file browser.
       listFiles();
 
-      
-      messageBox.innerHTML = 'Arquivo deletado!';
+      // Show a deleted message.
+      messageBox.innerHTML = 'Arquivo excluido!';
     }, errorHandler);
 
   }, errorHandler);
 }
 
 
+// Add event listeners on the form.
 function setupFormEventListener() {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    
+    // Get the form data.
     var filename = filenameInput.value;
     var content = contentTextArea.value;
 
-    
+    // Save the file.
     saveFile(filename, content);
   });
 
+}
+
+// Start the app by requesting a FileSystem (if the browser supports the API)
+if (window.requestFileSystem) {
+  initFileSystem();
+} else {
+  alert('Sem suporte');
 }
