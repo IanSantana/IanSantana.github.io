@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="css/css.css">
+    </head>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+      
+    <div id="player" class="video"></div> <!-- alterar tempo aqui-->
+    <div id="op" class="op"></div>
+    <script>
+      var player;
+      var videoId = 'SomeYoutubeIdHere';
+      var videotime = 0;
+      var timeupdater = null;
+     var popup =  document.getElementsByClassName("op");
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '500',
+          width: '100%',
+          videoId: 'l_tDPYx5le8',
+          
+          
+          events: {
+            'autoplay': '1',
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.seekTo(58,true); //tempo de inicio
+      }
+
+      function updateTime() {
+    var oldTime = videotime;
+    if(player && player.getCurrentTime) {
+      videotime = player.getCurrentTime();
+      console.log(videotime);
+    }
+    if(videotime !== oldTime) {
+      onProgress(videotime);
+    }
+  }
+  timeupdater = setInterval(updateTime, 100);
+  function onProgress(currentTime) {
+  if(currentTime > 84) { // tempo final
+    window.location.replace("escolha2.html"); //destino
+  }
+}
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        
+        if(player.getPlayerState() == '0'){
+          window.location.replace();          
+        }
+        
+      }
+<<<<<<< HEAD
+      function stopVideo() {
+        player.stopVideo();
+
+        /*player.cueVideoById("uG8V9dRqSsw",
+                    0,
+                    "large");*/
+
+        /*player.loadVideoById("uG8V9dRqSsw",
+                    5,
+                    "large");*/
+        //player.setSize(800,800);
+=======
+      
+>>>>>>> 3b4a3c1243a3e9c5d1b0a718794feb1cbf8be59d
+      
+      }
+    
+      
+    </script>
+  </body>
+</html>
