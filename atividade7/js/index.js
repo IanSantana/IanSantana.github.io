@@ -152,12 +152,11 @@ function saveFile(filename, content) {
         filenameInput.value = '';
         contentTextArea.value = '';
 
-        messageBox.innerHTML = 'File saved!';
+        messageBox.innerHTML = 'Arquivo salvo!';
       };
 
       fileWriter.onerror = function(e) {
-        console.log('Write error: ' + e.toString());
-        alert('An error occurred and your file could not be saved!');
+        
       };
 
       var contentBlob = new Blob([content], {type: 'text/plain'});
@@ -178,7 +177,7 @@ function deleteFile(filename) {
       listFiles();
 
       
-      messageBox.innerHTML = 'File deleted!';
+      messageBox.innerHTML = 'Arquivo deletado!';
     }, errorHandler);
 
   }, errorHandler);
