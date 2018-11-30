@@ -41,17 +41,14 @@
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
-<<<<<<< HEAD
         player.seekTo(26,true); //tempo de inicio
-=======
-        player.seekTo(0,true); //tempo de inicio
->>>>>>> 3b4a3c1243a3e9c5d1b0a718794feb1cbf8be59d
       }
 
       function updateTime() {
     var oldTime = videotime;
     if(player && player.getCurrentTime) {
       videotime = player.getCurrentTime();
+      console.log(videotime);
     }
     if(videotime !== oldTime) {
       onProgress(videotime);
@@ -59,13 +56,8 @@
   }
   timeupdater = setInterval(updateTime, 100);
   function onProgress(currentTime) {
-<<<<<<< HEAD
   if(currentTime > 56) { // tempo final
     window.location.replace("begin.html"); //destino
-=======
-  if(currentTime > 50) { // tempo final
-    window.location.replace("escolha1.html"); //destino
->>>>>>> 3b4a3c1243a3e9c5d1b0a718794feb1cbf8be59d
   }
 }
       // 5. The API calls this function when the player's state changes.
@@ -75,20 +67,14 @@
       function onPlayerStateChange(event) {
         
         if(player.getPlayerState() == '0'){
-<<<<<<< HEAD
           window.location.replace();          
-=======
-          window.location.replace("teste.html");          
-        }
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
->>>>>>> 3b4a3c1243a3e9c5d1b0a718794feb1cbf8be59d
         }
         
       }
 
-<<<<<<< HEAD
+      function stopVideo() {
+        player.stopVideo();
+
         /*player.cueVideoById("uG8V9dRqSsw",
                     0,
                     "large");*/
@@ -97,10 +83,9 @@
                     5,
                     "large");*/
         //player.setSize(800,800);
+
       
       }
-=======
->>>>>>> 3b4a3c1243a3e9c5d1b0a718794feb1cbf8be59d
     
       
     </script>
