@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Editor de texto</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+ <div id="container" class="clearfix" style="padding-left: 550px;padding-top: 150px;">
+    <h1>Editor de texto</h1>
+
+    <form action="#" method="POST" id="file-form">
+      <div class="field">
+        <input type="text" name="filename" id="filename" placeholder="Digite seu nome">
+      </div>
+      <div class="field">
+        <textarea name="content" id="content" placeholder="Digite algo aqui"></textarea>
+      </div>
+      <div class="field">
+        <button type="submit">Salvar arquivo</button>
+        <div id="messages"></div>
+      </div>
+    </form>
+
+    <div id="files">
+      <h2>Meus arquivos</h2>
+      <ul id="file-list"></ul>
+    </div>
+
+  </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
