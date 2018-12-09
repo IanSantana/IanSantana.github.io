@@ -1,5 +1,5 @@
 
-var i;
+var i = parseInt(j);
 onmessage = function(j){
 	i = parseInt(j);
 }
@@ -12,7 +12,7 @@ onmessage = function(e){
 		for (i; i >= 0; i--) {
 		    a.push(i);
 		};
-
+		
 		function bubbleSort(a)
 		{
 		    var swapped;
