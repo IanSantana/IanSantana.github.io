@@ -77,8 +77,10 @@ function withWebWorker() {
     worker.onmessage = function(e) {
       afterStop(e.data, true);
     };
-
-    worker.postMessage("start");
+    var j = document.getElementById("myNumber").value;
+    worker.postMessage("start",j);
+    console.log(j);
+    
 }
 
 function preStart() {
