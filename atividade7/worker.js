@@ -1,7 +1,9 @@
 
-var i = parseInt(j);
+var i;
 onmessage = function(j){
-	i = parseInt(j);
+	self.console.log('alo')
+	 i = parseInt(j);
+	 self.console.log('alo alo');
 }
 onmessage = function(e){
   if ( e.data === "start" ) {
