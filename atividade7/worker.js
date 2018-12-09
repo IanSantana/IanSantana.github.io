@@ -3,6 +3,7 @@ onmessage = function(e){
 
 		var a = [];
 		var i = document.getElementById("myNumber").value;
+		this.console.log(i);
 		for (i; i >= 0; i--) {
 		    a.push(i);
 		};
