@@ -73,8 +73,8 @@ if (typeof(Worker)==="undefined") {
 function nonWebWorker() {
     preStart();
     var a = [];
-
-    for (var i = 50000; i >= 0; i--) {
+    var i = document.getElementById("myNumber");
+    for (i = 50000; i >= 0; i--) {
         a.push(i);
     };
      
@@ -131,9 +131,10 @@ function afterStop(spentTime, mode) {
 
       <!-- Begin page content -->
       <div class="container">
-        <div class="page-header">
+        <div class="container">
           <h3>Ordenação de Vetor em Worker por BubbleSort</h3>
         </div>
+        <input type="number" id="myNumber">
         <p class="lead" style="text-align: center;">
           <button class="btn btn-dark btn-large" onclick="javascript:withWebWorker();">Ordernar</button>
         </p>
