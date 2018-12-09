@@ -2,8 +2,8 @@ onmessage = function(e){
   if ( e.data === "start" ) {
 
 		var a = [];
-
-		for (var i = 50000; i >= 0; i--) {
+		var i = document.getElementById("myNumber").value;
+		for (i; i >= 0; i--) {
 		    a.push(i);
 		};
 
