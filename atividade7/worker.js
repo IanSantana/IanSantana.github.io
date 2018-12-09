@@ -1,8 +1,13 @@
-onmessage = function(e,j){
+
+var i;
+onmessage = function(j){
+	i = parseInt(j);
+}
+onmessage = function(e){
   if ( e.data === "start" ) {
 		
 		var a = [];
-		var i = parseInt(j);
+		
 		
 		for (i; i >= 0; i--) {
 		    a.push(i);

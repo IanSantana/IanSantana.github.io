@@ -78,7 +78,8 @@ function withWebWorker() {
       afterStop(e.data, true);
     };
     var j = document.getElementById("myNumber").value;
-    worker.postMessage("start",j);
+    worker.postMessage(j);
+    worker.postMessage("start");
     console.log(j);
     
 }
